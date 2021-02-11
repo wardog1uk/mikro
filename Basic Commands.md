@@ -43,12 +43,16 @@ Delete the specified range of lines from memory.
 * `DISASSEMBLE start-`
 
 
-## FIND - display all uses of a label
+## FIND - display lines containing some text
 
 ### Commands
-* `FIND label`
-* `FIND label,start-end`
-* `FIND label,start-`
+* `FIND text`
+* `FIND text,start-end`
+* `FIND text,start-`
+* `FIND text,-end`
+
+### Description
+Display a formatted list of all lines that contain the specified text. Can be limited to a specified range.
 
 
 ## FORMAT - display the formatted source code
