@@ -71,9 +71,10 @@ Display the source code formatted in to columns better suited for assembler code
 * `NUMBER decimal`
 * `NUMBER @octal`
 * `NUMBER %binary`
+* `NUMBER label`
 
 ### Description
-Takes a number and displays its value in hexadecimal, decimal, octal, and binary.
+Takes a number, or an assembled label, and displays its value in hexadecimal, decimal, octal, and binary.
 
 
 ## TABLE - display a list of assembled labels
