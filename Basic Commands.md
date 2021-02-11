@@ -72,10 +72,13 @@ Display the source code formatted in to columns better suited for assembler code
 Takes a number and displays its value in hexadecimal, decimal, octal, and binary.
 
 
-## TABLE - display a list of labels used in the last assemble
+## TABLE - display a list of assembled labels
 
 ### Commands
 * `TABLE`
+
+### Description
+Used after a successful assembly to display an alphabetically sorted list of labels with their 16-bit hexadecimal values.
 
 
 ## TIM - start the machine code monitor
