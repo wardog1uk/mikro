@@ -54,7 +54,10 @@ Delete the specified range of lines from memory.
 ## FORMAT - display the formatted source code
 
 ### Commands
-* **FORMAT** 
+* **FORMAT**
+
+### Description
+Display the source code formatted in to columns better suited for assembler code.
 
 
 ## NUMBER - display a number in different formats
