@@ -74,7 +74,7 @@ Display the source code formatted in to columns better suited for assembler code
 * `NUMBER label`
 
 ### Description
-Takes a number, or an assembled label, and displays its value in hexadecimal, decimal, octal, and binary.
+Takes a number, or an assembled label, and displays its value in hexadecimal, decimal, octal, and binary. It can also display the result of simple additions and subtractions, as long as the value is not negative at any stage of the calculation.
 
 
 ## TABLE - display a list of assembled labels
