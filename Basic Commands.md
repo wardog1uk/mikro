@@ -3,7 +3,7 @@
  - [ASSEMBLE](#assemble) - assemble the source code
  - [AUTO](#auto) - automatically provide line numbers
  - [DELETE](#delete) - remove specified lines
- - [DISASSEMBLE](#delete) - display a disassembled area of memory
+ - [DISASSEMBLE](#disassemble) - display a disassembled area of memory
  - [FIND](#find) - display lines containing some text
  - [FORMAT](#format) - display the formatted source code
  - [NUMBER](#number) - display a number in different formats
