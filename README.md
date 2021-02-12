@@ -11,9 +11,9 @@ It also adds a machine code monitor called `TIM`.
 
 ## Commands
 
-[List of BASIC Commands added.](Basic%20Commands.md)
+[List of BASIC Commands](Basic%20Commands.md)
 
 
 ## Examples
 
-* Hello World
+* [Hello World](examples/helloworld.md)
