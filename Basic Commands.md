@@ -17,7 +17,7 @@
 * `ASSEMBLE`
 
 ### Description
-Assembles the source code to memory. It runs three passes then provides addresses for the start and end of each area of memory used, or stops and displays an error.
+Assemble the source code to memory. It runs three passes then provides addresses for the start and end of each area of memory used, or stops and displays an error.
 
 
 ## AUTO
@@ -28,7 +28,7 @@ Assembles the source code to memory. It runs three passes then provides addresse
 * `AUTO start,step`
 
 ### Description
-Outputs a line number ready for code to be entered and automatically displays the next line number when you press return.
+Output a line number ready for code to be entered, then automatically displays the next line number when you press return.
 
 To stop the AUTO function hold shift and press return, or press return twice. 
 
@@ -65,7 +65,7 @@ Displays a listing of memory locations along with their opcodes, or BYT if the o
 * `FIND text,-end`
 
 ### Description
-Display a formatted list of lines that contain the specified text. Can be limited to a specified range.
+Display a formatted list of lines containing the specified text. Can be limited to a specified range.
 
 
 ## FORMAT
@@ -74,7 +74,7 @@ Display a formatted list of lines that contain the specified text. Can be limite
 * `FORMAT`
 
 ### Description
-Display the source code formatted in to columns better suited for assembler code.
+Display the source code formatted in columns better suited for assembler code.
 
 
 ## NUMBER
@@ -87,7 +87,9 @@ Display the source code formatted in to columns better suited for assembler code
 * `NUMBER label`
 
 ### Description
-Takes a number, or an assembled label, and displays its value in hexadecimal, decimal, octal, and binary. It can also display the result of simple additions and subtractions, as long as the value is not negative at any stage of the calculation.
+Take a number, or an assembled label, and display its value in hexadecimal, decimal, octal, and binary.
+
+It can also display the result of simple additions and subtractions, as long as the value is not negative at any stage of the calculation.
 
 
 ## TABLE
@@ -105,4 +107,4 @@ Used after a successful assembly to display an alphabetically sorted list of lab
 * `TIM`
 
 ### Description
-Starts the machine code monitor and puts you at the prompt, ready for input. It displays the starting address of TIM and the state of the registers.
+Start the machine code monitor and put you at the prompt, ready for input. It displays the starting address of TIM and the state of the registers.
