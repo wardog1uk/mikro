@@ -42,6 +42,9 @@ Delete the specified range of lines from memory.
 * `DISASSEMBLE start-end`
 * `DISASSEMBLE start-`
 
+### Description
+Displays a listing of memory locations along with their opcodes, or BYT if the opcode is invalid. If there is more than a screenful of information it pauses until you press a key.
+
 
 ## FIND - display lines containing some text
 
