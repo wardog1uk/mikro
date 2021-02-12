@@ -1,14 +1,14 @@
 # Mikro Assembler BASIC Commands
 
- - ASSEMBLE - assemble the source code
- - AUTO - automatically provide line numbers
- - DELETE - remove specified lines
- - DISASSEMBLE - display a disassembled area of memory
- - FIND - display lines containing some text
- - FORMAT - display the formatted source code
- - NUMBER - display a number in different formats
- - TABLE - display a list of assembled labels
- - TIM - start the machine code monitor
+ - [ASSEMBLE](#assemble) - assemble the source code
+ - [AUTO](#auto) - automatically provide line numbers
+ - [DELETE](#delete) - remove specified lines
+ - [DISASSEMBLE](#delete) - display a disassembled area of memory
+ - [FIND](#find) - display lines containing some text
+ - [FORMAT](#format) - display the formatted source code
+ - [NUMBER](#number) - display a number in different formats
+ - [TABLE](#table) - display a list of assembled labels
+ - [TIM](#tim) - start the machine code monitor
 
 ## ASSEMBLE
 
