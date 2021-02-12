@@ -93,3 +93,6 @@ Used after a successful assembly to display an alphabetically sorted list of lab
 
 ### Commands
 * `TIM`
+
+### Description
+Starts the machine code monitor and puts you at the prompt, ready for input. It displays the starting address of TIM and the state of the registers.
