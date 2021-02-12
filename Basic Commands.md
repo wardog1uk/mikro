@@ -10,13 +10,14 @@
  - [TABLE](#table) - display a list of assembled labels
  - [TIM](#tim) - start the machine code monitor
 
+
 ## ASSEMBLE
 
 ### Commands
 * `ASSEMBLE`
 
 ### Description
-Assembles the source code to memory. It runs three passes then provides memory addresses for the start and end of each area of machine code used, or stops and displays an error.
+Assembles the source code to memory. It runs three passes then provides addresses for the start and end of each area of memory used, or stops and displays an error.
 
 
 ## AUTO
@@ -29,9 +30,9 @@ Assembles the source code to memory. It runs three passes then provides memory a
 ### Description
 Outputs a line number ready for code to be entered and automatically displays the next line number when you press return.
 
-To stop the AUTO function hold shift and press return, or press return twice.
+To stop the AUTO function hold shift and press return, or press return twice. 
 
-Default start number is 100 and default step is 10.
+On the first run the default start number is 100. The default step is 10.
 
 
 ## DELETE
@@ -52,7 +53,7 @@ Delete the specified range of lines from memory.
 * `DISASSEMBLE start-`
 
 ### Description
-Displays a listing of memory locations along with their opcodes, or BYT if the opcode is invalid. If there is more than a screenful of information it pauses until you press a key.
+Displays a listing of memory locations along with their opcodes, or BYT if the opcode is invalid. If more than a screenful of information it pauses until you press a key.
 
 
 ## FIND
@@ -64,7 +65,7 @@ Displays a listing of memory locations along with their opcodes, or BYT if the o
 * `FIND text,-end`
 
 ### Description
-Display a formatted list of all lines that contain the specified text. Can be limited to a specified range.
+Display a formatted list of lines that contain the specified text. Can be limited to a specified range.
 
 
 ## FORMAT
