@@ -1,7 +1,16 @@
 # Mikro Assembler BASIC Commands
 
+ - ASSEMBLE - assemble the source code
+ - AUTO - automatically provide line numbers
+ - DELETE - remove specified lines
+ - DISASSEMBLE - display a disassembled area of memory
+ - FIND - display lines containing some text
+ - FORMAT - display the formatted source code
+ - NUMBER - display a number in different formats
+ - TABLE - display a list of assembled labels
+ - TIM - start the machine code monitor
 
-## ASSEMBLE - assemble the source code
+## ASSEMBLE
 
 ### Commands
 * `ASSEMBLE`
@@ -10,7 +19,7 @@
 Assembles the source code to memory. It runs three passes then provides memory addresses for the start and end of each area of machine code used, or stops and displays an error.
 
 
-## AUTO - automatically provide line numbers
+## AUTO
 
 ### Commands
 * `AUTO`
@@ -25,7 +34,7 @@ To stop the AUTO function hold shift and press return, or press return twice.
 Default start number is 100 and default step is 10.
 
 
-## DELETE - remove specified lines
+## DELETE
 
 ### Commands
 * `DELETE start-end`
@@ -36,7 +45,7 @@ Default start number is 100 and default step is 10.
 Delete the specified range of lines from memory.
 
 
-## DISASSEMBLE - display a disassembled area of memory
+## DISASSEMBLE
 
 ### Commands
 * `DISASSEMBLE start-end`
@@ -46,7 +55,7 @@ Delete the specified range of lines from memory.
 Displays a listing of memory locations along with their opcodes, or BYT if the opcode is invalid. If there is more than a screenful of information it pauses until you press a key.
 
 
-## FIND - display lines containing some text
+## FIND
 
 ### Commands
 * `FIND text`
@@ -58,7 +67,7 @@ Displays a listing of memory locations along with their opcodes, or BYT if the o
 Display a formatted list of all lines that contain the specified text. Can be limited to a specified range.
 
 
-## FORMAT - display the formatted source code
+## FORMAT
 
 ### Commands
 * `FORMAT`
@@ -67,7 +76,7 @@ Display a formatted list of all lines that contain the specified text. Can be li
 Display the source code formatted in to columns better suited for assembler code.
 
 
-## NUMBER - display a number in different formats
+## NUMBER
 
 ### Commands
 * `NUMBER $hexadecimal`
@@ -80,7 +89,7 @@ Display the source code formatted in to columns better suited for assembler code
 Takes a number, or an assembled label, and displays its value in hexadecimal, decimal, octal, and binary. It can also display the result of simple additions and subtractions, as long as the value is not negative at any stage of the calculation.
 
 
-## TABLE - display a list of assembled labels
+## TABLE
 
 ### Commands
 * `TABLE`
@@ -89,7 +98,7 @@ Takes a number, or an assembled label, and displays its value in hexadecimal, de
 Used after a successful assembly to display an alphabetically sorted list of labels with their 16-bit hexadecimal values.
 
 
-## TIM - start the machine code monitor
+## TIM
 
 ### Commands
 * `TIM`
