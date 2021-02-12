@@ -10,5 +10,4 @@
     150 CPX #$0C
     160 BNE LOOP
     170 RTS
-    190 MSG=*
-    200 TXT "HELLO WORLD!"
+    180 MSG TXT "HELLO WORLD!"
