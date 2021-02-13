@@ -1,4 +1,5 @@
 
+
 # Hello World!
 
 Print "Hello World!" on the next line after running `SYS 828`.
@@ -28,7 +29,7 @@ Add a second label and let the assembler use it to calculate the message size.
 
 ## Alternative version
 
-This version prints all bytes from the MSG address until it encounters a 0 (the BRK opcode).
+This version prints all bytes from the `MSG` address until it encounters a 0 (the `BRK` instruction).
 
     100 *=$033C
     110 LDX #$0
