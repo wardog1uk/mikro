@@ -1,5 +1,7 @@
 # Mikro Assembler
 
+![Mikro Assembler](images/mikro-assembler-start.png)
+
 ## Introduction
 
 The Mikro Assembler is a cartridge released by Supersoft for the Commodore 64/VIC 20 in the early 1980s. It was written by and is copyright Andrew J Trott.
