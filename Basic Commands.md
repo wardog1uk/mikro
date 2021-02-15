@@ -13,6 +13,8 @@
 
 ## ASSEMBLE
 
+![ASSEMBLE](images/basic/assemble.png)
+
 ### Commands
 * `ASSEMBLE`
 
@@ -21,6 +23,8 @@ Assemble the source code to memory. It runs three passes then provides addresses
 
 
 ## AUTO
+
+![AUTO](images/basic/auto.png)
 
 ### Commands
 * `AUTO`
@@ -37,6 +41,8 @@ On the first run the default start number is 100. The default step is 10.
 
 ## DELETE
 
+![DELETE](images/basic/delete.png)
+
 ### Commands
 * `DELETE start-end`
 * `DELETE start-`
@@ -47,6 +53,8 @@ Delete the specified range of lines from memory.
 
 
 ## DISASSEMBLE
+
+![DISASSEMBLE](images/basic/disassemble.png)
 
 ### Commands
 * `DISASSEMBLE start-end`
