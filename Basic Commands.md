@@ -13,6 +13,8 @@
 
 ## ASSEMBLE
 
+![ASSEMBLE](images/basic/assemble.png)
+
 ### Commands
 * `ASSEMBLE`
 
@@ -21,6 +23,8 @@ Assemble the source code to memory. It runs three passes then provides addresses
 
 
 ## AUTO
+
+![AUTO](images/basic/auto.png)
 
 ### Commands
 * `AUTO`
@@ -37,6 +41,8 @@ On the first run the default start number is 100. The default step is 10.
 
 ## DELETE
 
+![DELETE](images/basic/delete.png)
+
 ### Commands
 * `DELETE start-end`
 * `DELETE start-`
@@ -48,6 +54,8 @@ Delete the specified range of lines from memory.
 
 ## DISASSEMBLE
 
+![DISASSEMBLE](images/basic/disassemble.png)
+
 ### Commands
 * `DISASSEMBLE start-end`
 * `DISASSEMBLE start-`
@@ -57,6 +65,8 @@ Displays a listing of memory locations and their contents, along with the corres
 
 
 ## FIND
+
+![FIND](images/basic/find.png)
 
 ### Commands
 * `FIND text`
@@ -70,6 +80,8 @@ Display a formatted list of lines containing the specified text. Can be limited 
 
 ## FORMAT
 
+![FORMAT](images/basic/format.png)
+
 ### Commands
 * `FORMAT`
 
@@ -78,6 +90,8 @@ Display the source code formatted in columns better suited for assembler code.
 
 
 ## NUMBER
+
+![NUMBER](images/basic/number.png)
 
 ### Commands
 * `NUMBER $hexadecimal`
@@ -94,6 +108,8 @@ It can also display the result of simple additions and subtractions, as long as 
 
 ## TABLE
 
+![TABLE](images/basic/table.png)
+
 ### Commands
 * `TABLE`
 
@@ -102,6 +118,8 @@ Used after a successful assembly to display an alphabetically sorted list of lab
 
 
 ## TIM
+
+![TIM](images/basic/tim.png)
 
 ### Commands
 * `TIM`
