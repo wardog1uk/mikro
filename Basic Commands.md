@@ -66,6 +66,8 @@ Displays a listing of memory locations and their contents, along with the corres
 
 ## FIND
 
+![FIND](images/basic/find.png)
+
 ### Commands
 * `FIND text`
 * `FIND text,start-end`
@@ -78,6 +80,8 @@ Display a formatted list of lines containing the specified text. Can be limited 
 
 ## FORMAT
 
+![FORMAT](images/basic/format.png)
+
 ### Commands
 * `FORMAT`
 
@@ -86,6 +90,8 @@ Display the source code formatted in columns better suited for assembler code.
 
 
 ## NUMBER
+
+![NUMBER](images/basic/number.png)
 
 ### Commands
 * `NUMBER $hexadecimal`
@@ -102,6 +108,8 @@ It can also display the result of simple additions and subtractions, as long as 
 
 ## TABLE
 
+![TABLE](images/basic/table.png)
+
 ### Commands
 * `TABLE`
 
@@ -110,6 +118,8 @@ Used after a successful assembly to display an alphabetically sorted list of lab
 
 
 ## TIM
+
+![TIM](images/basic/tim.png)
 
 ### Commands
 * `TIM`
