@@ -1,6 +1,3 @@
-
-
-
 # Hello World!
 
 Print `HELLO WORLD!` after running `SYS 828`.
@@ -20,7 +17,7 @@ Print `HELLO WORLD!` after running `SYS 828`.
 
 ## Modification
 
-Add an `END` label to mark the end of the message and calculate the message size during assembly.
+Add an `END` label to mark the end of the message and calculate the message size during assembly. Then change the message to display whatever you want.
 
     ...
     150 CPX #END-MSG
