@@ -21,6 +21,8 @@
 ### Description
 Assemble the source code to memory. It runs three passes then provides addresses for the start and end of each area of memory used, or stops and displays an error.
 
+It prompts for confirmation if the assembly would corrupt the area of memory containing BASIC code.
+
 
 ## AUTO
 
