@@ -27,7 +27,7 @@ Add an `END` label to mark the end of the message and calculate the message size
 
 ## Alternative version
 
-Print all bytes from the `MSG` address until it encounters a #$00 (the `BRK` instruction).
+Print all bytes from the `MSG` address until it encounters a zero byte.
 
     100 *=$033C
     110 LDX #$0
@@ -38,4 +38,4 @@ Print all bytes from the `MSG` address until it encounters a #$00 (the `BRK` ins
     160 JMP LOOP
     170 STOP RTS
     180 MSG TXT "HELLO ALTERNATIVE WORLD!"
-    190 BRK
+    190 BYT $0
