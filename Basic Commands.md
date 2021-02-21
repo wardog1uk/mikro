@@ -86,6 +86,9 @@ Display a formatted list of lines containing the specified text. Can be limited 
 
 ### Commands
 * `FORMAT`
+* `FORMAT start-end`
+* `FORMAT start-`
+* `FORMAT -end`
 
 ### Description
 Display the source code formatted in columns better suited for assembler code.
