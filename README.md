@@ -19,3 +19,4 @@ It provides a machine code monitor called `TIM`.
 ## Examples
 
 * [Hello World](examples/helloworld.md)
+* [Key Beep](examples/keybeep.md)
