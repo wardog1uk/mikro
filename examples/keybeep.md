@@ -23,6 +23,8 @@ After running `SYS 828` this will beep on every key press. Return to normal by r
     300 ! START SOUND
     310 BEEP LDA #15
     320 STA 54296
+    330 LDA #0
+    340 STA 54277
     350 LDA #248
     360 STA 54278
     370 LDA #17
