@@ -34,30 +34,30 @@ After running `SYS 828` this will beep on every key press. Return to normal by r
     410 LDA #17
     420 STA 54276
     430 !
-    440 ! WAIT
-    450 LDA #100
-    460 STA 251
-    470 LOOP1 STA 252
-    480 LOOP2 DEC 252
-    490 BNE LOOP2
-    500 DEC 251
-    510 BNE LOOP1
-    520 !
-    529 ! STOP SOUND
-    530 LDA #16
-    540 STA 54276
-    550 LDA #0
-    560 STA 54277
-    570 STA 54278
-    580 JMP $EB48
-    590 !
-    600 ! RESET = SYS 911
-    610 *=$038F
-    620 LDA #$48
-    630 STA $028F
-    640 LDA #$EB
-    650 STA $0290
-    660 RTS
+    500 ! WAIT
+    510 LDA #100
+    520 STA 251
+    530 LOOP1 STA 252
+    540 LOOP2 DEC 252
+    550 BNE LOOP2
+    560 DEC 251
+    570 BNE LOOP1
+    580 !
+    600 ! STOP SOUND
+    610 LDA #16
+    620 STA 54276
+    630 LDA #0
+    640 STA 54277
+    650 STA 54278
+    660 JMP $EB48
+    670 !
+    700 ! RESET = SYS 911
+    710 *=$038F
+    720 LDA #$48
+    730 STA $028F
+    740 LDA #$EB
+    750 STA $0290
+    760 RTS
 
 
 ## Credits
