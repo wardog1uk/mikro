@@ -43,9 +43,10 @@ After running `SYS 828` this will beep on every key press. Return to normal by r
     500 DEC 251
     510 BNE LOOP1
     520 !
-    530 ! STOP SOUND
-    540 LDA #0
-    550 STA 54276
+    529 ! STOP SOUND
+    530 LDA #16
+    540 STA 54276
+    550 LDA #0
     560 STA 54277
     570 STA 54278
     580 JMP $EB48
