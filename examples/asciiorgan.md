@@ -21,8 +21,8 @@ Code is copyright *Jim Blackshear* and *Brian Bouldin*.
     30 BGCOLOR=$D021
     40 SID=$D400
     50 VOLUME=$D418
-    60 SETELSE=$FFDB
-    70 RDELSE=$FFDE
+    60 SETTIM=$FFDB
+    70 RDTIM=$FFDE
     80 GETIN=$FFE4
     99 !
     100 JSR INITSCRN
@@ -113,7 +113,7 @@ Code is copyright *Jim Blackshear* and *Brian Bouldin*.
     2000 DBAR LDA #$00
     2010 TAX
     2020 TAY
-    2030 JSR SETELSE
+    2030 JSR SETTIM
     2040 LDX NOTE
     2050 LDA BSL,X
     2060 LDY BSH,X
@@ -121,7 +121,7 @@ Code is copyright *Jim Blackshear* and *Brian Bouldin*.
     2080 STY $FE
     2090 TXA
     2100 JSR BAR
-    2110 WAIT JSR RDELSE
+    2110 WAIT JSR RDTIM
     2120 CMP #$1E
     2130 BNE WAIT
     2140 LDA #$00
