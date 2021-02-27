@@ -2,6 +2,12 @@
 
 After running `SYS 828` this will beep on every key press. Return to normal by running `SYS 911`.
 
+
+## Credits
+
+The original Mikro assembler code is from the book *Introducing Commodore 64 Machine Code* by *Ian Sinclair*. This version is slightly refactored and commented for clarity, plus some corrections were made to the SID settings.
+
+
 ## Code
 
     10 ! SYS 828
@@ -58,8 +64,3 @@ After running `SYS 828` this will beep on every key press. Return to normal by r
     740 LDA #$EB
     750 STA $0290
     760 RTS
-
-
-## Credits
-
-The original Mikro assembler code is from the book *Introducing Commodore 64 Machine Code* by *Ian Sinclair*. This version is slightly refactored and commented for clarity, plus some corrections were made to the SID settings.
