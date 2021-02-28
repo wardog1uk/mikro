@@ -1,0 +1,143 @@
+# ASCII Organ
+
+Press a key to play a note. Press F1 to exit.
+
+|1|2|3|4|5|6|7|8|9|0|+|-|
+|--|--|--|--|--|--|--|--|--|--|--|--|
+|C|C#|D|D#|E|F|F#|G|G#|A|A#|B
+
+
+## Credits
+
+Taken from *The Visible Computer: 6502* by *Charles Anderson*.
+Code is copyright *Jim Blackshear* and *Brian Bouldin*.
+
+
+## Code
+
+    10 *=$C000
+    19 !
+    20 NOTE=$FC
+    30 BGCOLOR=$D021
+    40 SID=$D400
+    50 VOLUME=$D418
+    60 SETTIM=$FFDB
+    70 RDTIM=$FFDE
+    80 GETIN=$FFE4
+    99 !
+    100 JSR INITSCRN
+    110 JSR INITSID
+    120 TOP JSR GETIN
+    130 CMP #$00
+    140 BEQ TOP
+    150 CMP #$85
+    160 BEQ QUIT
+    170 JSR CHKKEY
+    180 LDA NOTE
+    190 BEQ TOP
+    200 JSR BEEP
+    210 JMP TOP
+    220 QUIT RTS
+    299 !
+    300 INITSCRN LDA #$00
+    310 STA BGCOLOR
+    320 LDA #$04
+    330 LDX #$D8
+    340 LDY #$00
+    350 STY $FB
+    360 STA $FC
+    370 STY $FD
+    380 STX $FE
+    390 LDX #$04
+    400 LOOP1 LDA #$00
+    410 STA ($FD),Y
+    420 LDA #$A0
+    430 STA ($FB),Y
+    440 INY
+    450 BNE LOOP1
+    460 INC $FC
+    470 INC $FE
+    480 DEX
+    490 BNE LOOP1
+    500 RTS
+    599 !
+    600 INITSID LDA #$00
+    610 LDX #$1C
+    620 LOOP2 STA SID,X
+    630 DEX
+    640 BNE LOOP2
+    650 LDA #$20
+    660 STA SID+4
+    670 LDA #$F0
+    680 STA SID+6
+    690 LDA #$0F
+    700 STA VOLUME
+    710 RTS
+    799 !
+    800 CHKKEY LDX #$00
+    810 STX NOTE
+    820 CMP #$2D
+    830 BNE PLUS
+    840 LDA #$0C
+    850 STA NOTE
+    860 RTS
+    870 PLUS CMP #$2B
+    880 BNE ZERO
+    890 LDA #$0B
+    900 STA NOTE
+    910 RTS
+    920 ZERO CMP #$30
+    930 BNE CNVT
+    940 LDA #$0A
+    950 STA NOTE
+    960 RTS
+    970 CNVT SEC
+    980 SBC #$30
+    990 CMP #$0A
+    1000 BCS EXIT
+    1010 STA NOTE
+    1020 EXIT RTS
+    1199 !
+    1200 BEEP LDX NOTE
+    1210 LDA PITCHL,X
+    1220 LDY PITCHH,X
+    1230 STA SID
+    1240 STY SID+1
+    1250 LDY #$21
+    1260 STY SID+4
+    1270 JSR DBAR
+    1280 LDY #$00
+    1290 STY SID+4
+    1300 RTS
+    1999 !
+    2000 DBAR LDA #$00
+    2010 TAX
+    2020 TAY
+    2030 JSR SETTIM
+    2040 LDX NOTE
+    2050 LDA BSL,X
+    2060 LDY BSH,X
+    2070 STA $FD
+    2080 STY $FE
+    2090 TXA
+    2100 JSR BAR
+    2110 WAIT JSR RDTIM
+    2120 CMP #$1E
+    2130 BNE WAIT
+    2140 LDA #$00
+    2150 JMP BAR
+    2160 BAR LDY #$00
+    2170 BAR1 STA ($FD),Y
+    2180 INY
+    2190 CPY #$50
+    2200 BNE BAR1
+    2210 RTS
+    2999 !
+    3000 PITCHL BYT $00,$61,$E1,$68,$F7,$8F,$30,$DA
+    3010 BYT $8F,$4E,$18,$EF,$D2,$00,$00,$00
+    3020 PITCHH BYT $00,$08,$08,$09,$09,$0A,$0B,$0B
+    3030 BYT $0C,$0D,$0E,$0E,$0F,$00,$00,$00
+    3040 BSL BYT $00,$70,$20,$D0,$80,$30,$E0,$90
+    3050 BYT $40,$F0,$A0,$50,$00,$00,$00,$00
+    3060 BSH BYT $00,$DB,$DB,$DA,$DA,$DA,$D9,$D9
+    3070 BYT $D9,$D8,$D8,$D8,$D8
