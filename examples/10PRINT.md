@@ -1,6 +1,6 @@
 # 10 PRINT
 
-Display a randomly generated maze pattern. Run `sys 4096` to start and press `Run Stop+Restore` to break (`Escape+Page-up` in Vice).
+Display a randomly generated maze pattern. Run `sys 4096` to start and press `Run Stop+Restore` to break back to basic (`Escape+Page-up` in Vice).
 
 
 ## Credits
