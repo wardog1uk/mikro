@@ -1,6 +1,6 @@
 # ASCII Organ
 
-Press a key to play a note. Press F1 to exit.
+Start with `sys 49152`. Press a key to play a note and press F1 to exit.
 
 |1|2|3|4|5|6|7|8|9|0|+|-|
 |--|--|--|--|--|--|--|--|--|--|--|--|
