@@ -4,15 +4,15 @@ Print `HELLO WORLD!` after running `SYS 828`.
 
 ## Code
 
-    100 *=$033C
-    110 LDX #$00
-    120 LOOP LDA MSG,X
-    130 JSR $FFD2
-    140 INX
-    150 CPX #$0C
-    160 BNE LOOP
-    170 RTS
-    180 MSG TXT "HELLO WORLD!"
+    100 *=$033c
+    110 ldx #$00
+    120 loop lda msg,x
+    130 jsr $ffd2
+    140 inx
+    150 cpx #$0c
+    160 bne loop
+    170 rts
+    180 msg txt "hello world!"
 
 
 ## Modification
@@ -20,22 +20,22 @@ Print `HELLO WORLD!` after running `SYS 828`.
 Add an `END` label to mark the end of the message and calculate the message size during assembly. Then change the message to display whatever you want.
 
     ...
-    150 CPX #END-MSG
+    150 cpx #end-msg
     ...
-    190 END=*
+    190 end=*
 
 
 ## Alternative version
 
 Print all bytes from the `MSG` address until it encounters a zero byte.
 
-    100 *=$033C
-    110 LDX #$0
-    120 LOOP LDA MSG,X
-    130 BEQ STOP
-    140 JSR $FFD2
-    150 INX
-    160 JMP LOOP
-    170 STOP RTS
-    180 MSG TXT "HELLO ALTERNATIVE WORLD!"
-    190 BYT $0
+    100 *=$033c
+    110 ldx #$0
+    120 loop lda msg,x
+    130 beq stop
+    140 jsr $ffd2
+    150 inx
+    160 jmp loop
+    170 stop rts
+    180 msg txt "hello alternative world!"
+    190 byt $0

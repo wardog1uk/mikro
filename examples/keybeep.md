@@ -10,57 +10,57 @@ The original Mikro assembler code is from the book *Introducing Commodore 64 Mac
 
 ## Code
 
-    10 ! SYS 828
-    100 *=$033C
+    10 ! sys 828
+    100 *=$033c
     110 !
-    120 ! REDIRECT KEY PRESS TO HANDLER
-    130 LDA #<HANDLER
-    140 STA $028F
-    150 LDA #>HANDLER
-    160 STA $0290
-    170 RTS
+    120 ! redirect key press to handler
+    130 lda #<handler
+    140 sta $028f
+    150 lda #>handler
+    160 sta $0290
+    170 rts
     180 !
-    200 ! HANDLE KEY PRESS
-    210 HANDLER PHA
-    220 JSR BEEP
-    230 PLA
-    240 JMP $EB48
+    200 ! handle key press
+    210 handler pha
+    220 jsr beep
+    230 pla
+    240 jmp $eb48
     250 !
-    300 ! START SOUND
-    310 BEEP LDA #15
-    320 STA 54296
-    330 LDA #0
-    340 STA 54277
-    350 LDA #248
-    360 STA 54278
-    370 LDA #17
-    380 STA 54273
-    390 LDA #37
-    400 STA 54272
-    410 LDA #17
-    420 STA 54276
+    300 ! start sound
+    310 beep lda #15
+    320 sta 54296
+    330 lda #0
+    340 sta 54277
+    350 lda #248
+    360 sta 54278
+    370 lda #17
+    380 sta 54273
+    390 lda #37
+    400 sta 54272
+    410 lda #17
+    420 sta 54276
     430 !
-    500 ! WAIT
-    510 LDA #100
-    520 STA 251
-    530 LOOP1 STA 252
-    540 LOOP2 DEC 252
-    550 BNE LOOP2
-    560 DEC 251
-    570 BNE LOOP1
+    500 ! wait
+    510 lda #100
+    520 sta 251
+    530 loop1 sta 252
+    540 loop2 dec 252
+    550 bne loop2
+    560 dec 251
+    570 bne loop1
     580 !
-    600 ! STOP SOUND
-    610 LDA #16
-    620 STA 54276
-    630 LDA #0
-    640 STA 54277
-    650 STA 54278
-    660 JMP $EB48
+    600 ! stop sound
+    610 lda #16
+    620 sta 54276
+    630 lda #0
+    640 sta 54277
+    650 sta 54278
+    660 jmp $eb48
     670 !
-    700 ! RESET = SYS 911
-    710 *=$038F
-    720 LDA #$48
-    730 STA $028F
-    740 LDA #$EB
-    750 STA $0290
-    760 RTS
+    700 ! reset = sys 911
+    710 *=$038f
+    720 lda #$48
+    730 sta $028f
+    740 lda #$eb
+    750 sta $0290
+    760 rts

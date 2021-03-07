@@ -15,129 +15,129 @@ Code is copyright *Jim Blackshear* and *Brian Bouldin*.
 
 ## Code
 
-    10 *=$C000
+    10 *=$c000
     19 !
-    20 NOTE=$FC
-    30 BGCOLOR=$D021
-    40 SID=$D400
-    50 VOLUME=$D418
-    60 SETTIM=$FFDB
-    70 RDTIM=$FFDE
-    80 GETIN=$FFE4
+    20 note=$fc
+    30 bgcolor=$d021
+    40 sid=$d400
+    50 volume=$d418
+    60 settim=$ffdb
+    70 rdtim=$ffde
+    80 getin=$ffe4
     99 !
-    100 JSR INITSCRN
-    110 JSR INITSID
-    120 TOP JSR GETIN
-    130 CMP #$00
-    140 BEQ TOP
-    150 CMP #$85
-    160 BEQ QUIT
-    170 JSR CHKKEY
-    180 LDA NOTE
-    190 BEQ TOP
-    200 JSR BEEP
-    210 JMP TOP
-    220 QUIT RTS
+    100 jsr initscrn
+    110 jsr initsid
+    120 top jsr getin
+    130 cmp #$00
+    140 beq top
+    150 cmp #$85
+    160 beq quit
+    170 jsr chkkey
+    180 lda note
+    190 beq top
+    200 jsr beep
+    210 jmp top
+    220 quit rts
     299 !
-    300 INITSCRN LDA #$00
-    310 STA BGCOLOR
-    320 LDA #$04
-    330 LDX #$D8
-    340 LDY #$00
-    350 STY $FB
-    360 STA $FC
-    370 STY $FD
-    380 STX $FE
-    390 LDX #$04
-    400 LOOP1 LDA #$00
-    410 STA ($FD),Y
-    420 LDA #$A0
-    430 STA ($FB),Y
-    440 INY
-    450 BNE LOOP1
-    460 INC $FC
-    470 INC $FE
-    480 DEX
-    490 BNE LOOP1
-    500 RTS
+    300 initscrn lda #$00
+    310 sta bgcolor
+    320 lda #$04
+    330 ldx #$d8
+    340 ldy #$00
+    350 sty $fb
+    360 sta $fc
+    370 sty $fd
+    380 stx $fe
+    390 ldx #$04
+    400 loop1 lda #$00
+    410 sta ($fd),y
+    420 lda #$a0
+    430 sta ($fb),y
+    440 iny
+    450 bne loop1
+    460 inc $fc
+    470 inc $fe
+    480 dex
+    490 bne loop1
+    500 rts
     599 !
-    600 INITSID LDA #$00
-    610 LDX #$1C
-    620 LOOP2 STA SID,X
-    630 DEX
-    640 BNE LOOP2
-    650 LDA #$20
-    660 STA SID+4
-    670 LDA #$F0
-    680 STA SID+6
-    690 LDA #$0F
-    700 STA VOLUME
-    710 RTS
+    600 initsid lda #$00
+    610 ldx #$1c
+    620 loop2 sta sid,x
+    630 dex
+    640 bne loop2
+    650 lda #$20
+    660 sta sid+4
+    670 lda #$f0
+    680 sta sid+6
+    690 lda #$0f
+    700 sta volume
+    710 rts
     799 !
-    800 CHKKEY LDX #$00
-    810 STX NOTE
-    820 CMP #$2D
-    830 BNE PLUS
-    840 LDA #$0C
-    850 STA NOTE
-    860 RTS
-    870 PLUS CMP #$2B
-    880 BNE ZERO
-    890 LDA #$0B
-    900 STA NOTE
-    910 RTS
-    920 ZERO CMP #$30
-    930 BNE CNVT
-    940 LDA #$0A
-    950 STA NOTE
-    960 RTS
-    970 CNVT SEC
-    980 SBC #$30
-    990 CMP #$0A
-    1000 BCS EXIT
-    1010 STA NOTE
-    1020 EXIT RTS
+    800 chkkey ldx #$00
+    810 stx note
+    820 cmp #$2d
+    830 bne plus
+    840 lda #$0c
+    850 sta note
+    860 rts
+    870 plus cmp #$2b
+    880 bne zero
+    890 lda #$0b
+    900 sta note
+    910 rts
+    920 zero cmp #$30
+    930 bne cnvt
+    940 lda #$0a
+    950 sta note
+    960 rts
+    970 cnvt sec
+    980 sbc #$30
+    990 cmp #$0a
+    1000 bcs exit
+    1010 sta note
+    1020 exit rts
     1199 !
-    1200 BEEP LDX NOTE
-    1210 LDA PITCHL,X
-    1220 LDY PITCHH,X
-    1230 STA SID
-    1240 STY SID+1
-    1250 LDY #$21
-    1260 STY SID+4
-    1270 JSR DBAR
-    1280 LDY #$00
-    1290 STY SID+4
-    1300 RTS
+    1200 beep ldx note
+    1210 lda pitchl,x
+    1220 ldy pitchh,x
+    1230 sta sid
+    1240 sty sid+1
+    1250 ldy #$21
+    1260 sty sid+4
+    1270 jsr dbar
+    1280 ldy #$00
+    1290 sty sid+4
+    1300 rts
     1999 !
-    2000 DBAR LDA #$00
-    2010 TAX
-    2020 TAY
-    2030 JSR SETTIM
-    2040 LDX NOTE
-    2050 LDA BSL,X
-    2060 LDY BSH,X
-    2070 STA $FD
-    2080 STY $FE
-    2090 TXA
-    2100 JSR BAR
-    2110 WAIT JSR RDTIM
-    2120 CMP #$1E
-    2130 BNE WAIT
-    2140 LDA #$00
-    2150 JMP BAR
-    2160 BAR LDY #$00
-    2170 BAR1 STA ($FD),Y
-    2180 INY
-    2190 CPY #$50
-    2200 BNE BAR1
-    2210 RTS
+    2000 dbar lda #$00
+    2010 tax
+    2020 tay
+    2030 jsr settim
+    2040 ldx note
+    2050 lda bsl,x
+    2060 ldy bsh,x
+    2070 sta $fd
+    2080 sty $fe
+    2090 txa
+    2100 jsr bar
+    2110 wait jsr rdtim
+    2120 cmp #$1e
+    2130 bne wait
+    2140 lda #$00
+    2150 jmp bar
+    2160 bar ldy #$00
+    2170 bar1 sta ($fd),y
+    2180 iny
+    2190 cpy #$50
+    2200 bne bar1
+    2210 rts
     2999 !
-    3000 PITCHL BYT $00,$61,$E1,$68,$F7,$8F,$30,$DA
-    3010 BYT $8F,$4E,$18,$EF,$D2,$00,$00,$00
-    3020 PITCHH BYT $00,$08,$08,$09,$09,$0A,$0B,$0B
-    3030 BYT $0C,$0D,$0E,$0E,$0F,$00,$00,$00
-    3040 BSL BYT $00,$70,$20,$D0,$80,$30,$E0,$90
-    3050 BYT $40,$F0,$A0,$50,$00,$00,$00,$00
-    3060 BSH BYT $00,$DB,$DB,$DA,$DA,$DA,$D9,$D9
-    3070 BYT $D9,$D8,$D8,$D8,$D8
+    3000 pitchl byt $00,$61,$e1,$68,$f7,$8f,$30,$da
+    3010 byt $8f,$4e,$18,$ef,$d2,$00,$00,$00
+    3020 pitchh byt $00,$08,$08,$09,$09,$0a,$0b,$0b
+    3030 byt $0c,$0d,$0e,$0e,$0f,$00,$00,$00
+    3040 bsl byt $00,$70,$20,$d0,$80,$30,$e0,$90
+    3050 byt $40,$f0,$a0,$50,$00,$00,$00,$00
+    3060 bsh byt $00,$db,$db,$da,$da,$da,$d9,$d9
+    3070 byt $d9,$d8,$d8,$d8,$d8
