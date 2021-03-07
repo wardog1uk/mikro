@@ -37,5 +37,4 @@ Print all bytes from the `MSG` address until it encounters a zero byte.
     150 inx
     160 jmp loop
     170 stop rts
-    180 msg txt "hello alternative world!"
-    190 byt $0
+    180 msg txt "hello other world!",$0
