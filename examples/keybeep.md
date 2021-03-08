@@ -55,7 +55,7 @@ The original Mikro assembler code is from the book *Introducing Commodore 64 Mac
     630 lda #0
     640 sta 54277
     650 sta 54278
-    660 jmp $eb48
+    660 rts
     670 !
     700 ! reset = sys 911
     710 *=$038f
