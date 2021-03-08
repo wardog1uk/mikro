@@ -1,5 +1,3 @@
-
-
 # Key Beep
 
 After running `SYS 828` this will beep on every key press. Return to normal by running `SYS 911`.
