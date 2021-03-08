@@ -5,7 +5,7 @@ After running `SYS 828` this will beep on every key press. Return to normal by r
 
 ## Credits
 
-The original Mikro assembler code is from the book *Introducing Commodore 64 Machine Code* by *Ian Sinclair*. This version is slightly refactored and commented for clarity, plus some corrections were made to the SID settings.
+The original Mikro assembler code is from the book *Introducing Commodore 64 Machine Code* by *Ian Sinclair*. This version is refactored and commented for clarity, plus some corrections were made to the SID settings and a reset call was added.
 
 
 ## Code
@@ -55,8 +55,9 @@ The original Mikro assembler code is from the book *Introducing Commodore 64 Mac
     630 lda #0
     640 sta 54277
     650 sta 54278
-    660 jmp $eb48
-    670 !
+    660 !
+    670 rts
+    680 !----------------
     700 ! reset = sys 911
     710 *=$038f
     720 lda #$48
