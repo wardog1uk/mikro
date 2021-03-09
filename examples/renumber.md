@@ -1,6 +1,6 @@
 # Renumber
 
-Renumber code from 10 in increments of 10. Load in memory, then load or type in the other code and run `sys 50176`.
+Renumber code from 10 in increments of 10. Load in memory and assemble, then load or type in the other code and run `sys 50176`.
 
 
 ## Credits
