@@ -29,3 +29,4 @@ It provides a machine code monitor called `TIM`.
 * [Key Beep](examples/keybeep.md)
 * [ASCII Organ](examples/asciiorgan.md)
 * [10 PRINT](examples/10PRINT.md)
+* [Renumber](examples/renumber.md)
