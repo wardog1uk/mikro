@@ -5,7 +5,7 @@ Renumber code from 10 in increments of 10. Load in memory and assemble, then loa
 
 ## Credits
 
-Mikro code taken directly from *Advanced machine code programming for the Commodore 64* by *A.P. and D.J. Stephenson* page 69.
+Mikro code taken directly from *Advanced machine code programming for the Commodore 64* by *A.P. and D.J. Stephenson*, page 69.
 
 
 ## Code
