@@ -1,5 +1,8 @@
 # Renumber
 
+Renumber code from 10 in increments of 10. Load in memory, then load or type in the other code and run `sys 50176`.
+
+
 ## Code
 
     10 ! fixed renumber routine
