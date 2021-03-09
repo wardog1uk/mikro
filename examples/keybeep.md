@@ -65,3 +65,22 @@ The original Mikro assembler code is from the book *Introducing Commodore 64 Mac
     740 lda #$eb
     750 sta $0290
     760 rts
+
+
+## Alternative Program
+
+This removes all the sound code and replaces it with something else.
+
+    10 ! sys 828
+    100 *=$033c
+    110 !
+    120 ! redirect key press to handler
+    130 lda #<handler
+    140 sta $028f
+    150 lda #>handler
+    160 sta $0290
+    170 rts
+    180 !
+    200 ! handle key press
+    210 handler inc $d020
+    220 jmp $eb48
