@@ -3,6 +3,11 @@
 Renumber code from 10 in increments of 10. Load in memory, then load or type in the other code and run `sys 50176`.
 
 
+## Credits
+
+Mikro code taken directly from *Advanced machine code programming for the Commodore 64* by *A.P. and D.J. Stephenson* page 69.
+
+
 ## Code
 
     10 ! fixed renumber routine
