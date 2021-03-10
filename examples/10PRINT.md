@@ -5,7 +5,7 @@ Display a randomly generated maze pattern. Run `sys 4096` to start and press `Ru
 
 ## Credits
 
-Taken from the book *10 PRINT CHR$(205.5+RND(1)); : GOTO 10*. [(Website)](https://10print.org/)
+Taken from the book *10 PRINT CHR$(205.5+RND(1)); : GOTO 10*, page 234. [(Website)](https://10print.org/)
 
 
 ## Code
@@ -19,4 +19,3 @@ Taken from the book *10 PRINT CHR$(205.5+RND(1)); : GOTO 10*. [(Website)](https:
     220 adc #$6d
     230 jsr $ffd2
     240 bne loop
-
