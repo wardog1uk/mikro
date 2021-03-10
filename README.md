@@ -26,7 +26,7 @@ It provides a machine code monitor called `TIM`.
 ## Examples
 
 * [Hello World](examples/helloworld.md)
-* [Key Beep](examples/keybeep.md)
-* [ASCII Organ](examples/asciiorgan.md)
 * [10 PRINT](examples/10PRINT.md)
+* [Key Beep](examples/keybeep.md)
 * [Renumber](examples/renumber.md)
+* [ASCII Organ](examples/asciiorgan.md)
