@@ -9,7 +9,7 @@ Start with `sys 49152`. Press a key to play a note and press F1 to exit.
 
 ## Credits
 
-Taken from *The Visible Computer: 6502* by *Charles Anderson* and formatted for the Mikro assembler.
+Taken from *The Visible Computer: 6502* by *Charles Anderson*, pages 124-127, and formatted for the Mikro assembler.
 Code is copyright *Jim Blackshear* and *Brian Bouldin*.
 
 
