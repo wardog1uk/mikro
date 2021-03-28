@@ -7,7 +7,7 @@
  - [OUT](#out)
  - [TXT](#txt)
  - [WOR](#wor)
- - [\*](#\*)
+ - [\*](#\*\(asterisk\))
 
 
 ## BYT
@@ -31,4 +31,4 @@
 ## WOR
 
 
-## \*
+## \*\(asterisk\)
