@@ -1,4 +1,4 @@
-# Mikro Assembler Pseudo Op-codes
+# Mikro Assembler Pseudo Opcodes
 
  - [BYT](#byt)
  - [END](#end)
