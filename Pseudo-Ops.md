@@ -7,7 +7,7 @@
  - [OUT](#out)
  - [TXT](#txt)
  - [WOR](#wor)
- - [\*](#\*\(asterisk\))
+ - [\*](#asterisk)
 
 
 ## BYT
