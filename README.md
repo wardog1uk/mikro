@@ -22,6 +22,7 @@ It provides a machine code monitor called `TIM`.
 ## Usage
 
 * [List of BASIC Commands](Basic%20Commands.md)
+* [List of Pseudo-Ops](Pseudo-Ops.md)
 
 
 ## Examples
