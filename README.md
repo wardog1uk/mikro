@@ -16,7 +16,7 @@ It provides a machine code monitor called `TIM`.
 ## Downloads
 * [Mikro Assembler Cartridge](downloads/cartridges/Mikro%20Assembler.crt)
 * [Mikro Assembler Cartridge (modified to work in Vice)](downloads/cartridges/Mikro%20Assembler%20[vice].crt)
-* [Multi Easy Easyflash Cartridge](downloads/cartridges/Multi-Easy.crt) by [Lord Crass](https://csdb.dk/scener/?id=25177), contains a Mikro Assembler that works on my C64.
+* [Multi Easy Easyflash Cartridge](downloads/cartridges/Multi-Easy.crt) by [Lord Crass](https://csdb.dk/scener/?id=25177), contains a Mikro Assembler that works on my C64 and my C64C ([source](https://csdb.dk/release/?id=117893)).
 * [Mikro Assembler Manual](downloads/Mikro%20Assembler%20Manual.pdf)
 
 
