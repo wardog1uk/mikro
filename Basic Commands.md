@@ -10,6 +10,7 @@
  - [TABLE](#table) - display a list of assembled labels
  - [TIM](#tim) - start the machine code monitor
 
+Note: These commands can be called using BASIC shortcuts (i.e. enter the first letter then hold shift while entering the second letter).
 
 ## ASSEMBLE
 
