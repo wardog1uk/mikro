@@ -138,6 +138,6 @@ Code is copyright *Jim Blackshear* and *Brian Bouldin*.
     3020 pitchh byt $00,$08,$08,$09,$09,$0a,$0b,$0b
     3030 byt $0c,$0d,$0e,$0e,$0f,$00,$00,$00
     3040 bsl byt $00,$70,$20,$d0,$80,$30,$e0,$90
-    3050 byt $40,$f0,$a0,$50,$00,$00,$00,$00
+    3050 byt $40,$f0,$a0,$50,$00
     3060 bsh byt $00,$db,$db,$da,$da,$da,$d9,$d9
     3070 byt $d9,$d8,$d8,$d8,$d8
