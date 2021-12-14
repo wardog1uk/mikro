@@ -42,11 +42,11 @@ The original Mikro assembler code is from the book *Introducing Commodore 64 Mac
     430 !
     500 ! wait
     510 lda #100
-    520 sta 251
-    530 loop1 sta 252
-    540 loop2 dec 252
+    520 sta $fb
+    530 loop1 sta $fc
+    540 loop2 dec $fc
     550 bne loop2
-    560 dec 251
+    560 dec $fb
     570 bne loop1
     580 !
     600 ! stop sound
