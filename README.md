@@ -28,6 +28,7 @@ It provides a machine code monitor called `TIM`.
 ## Examples
 
 * [Hello World](examples/helloworld.md)
+* [Hello World Inline](examples/helloworldinline.md)
 * [10 PRINT](examples/10PRINT.md)
 * [Key Beep](examples/keybeep.md)
 * [Renumber](examples/renumber.md)
