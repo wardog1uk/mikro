@@ -1,6 +1,8 @@
 # Hello World Inline!
 
-Print `HELLO WORLD!` after running `SYS 49152`. A clever way of manipulating the return address on the stack to have data stored along with the code that uses it.
+Print `HELLO WORLD!` after running `SYS 49152`.
+
+A clever way of manipulating the return address on the stack to have data stored along with the code that uses it.
 
 Adapted from *Assembler Routines for the 6502* by David Barrow (ISBN: 9780712605076), page 73.
 
