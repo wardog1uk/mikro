@@ -2,6 +2,9 @@
 
 Checks the raster position to flash the border with a solid colour.
 
+Start with `SYS 49152` and stop by pressing any key.
+
+
 ## Code
 
     10 borcol=$d020
