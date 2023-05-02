@@ -1,5 +1,7 @@
 # Mikro Assembler BASIC Commands
 
+Below is a list of commands that can be used with Mikro Assembler, along with their descriptions and examples. These commands can also be invoked using BASIC shortcuts by entering the first letter and holding shift while entering the second letter.
+
  - [ASSEMBLE](#assemble) - assemble the source code
  - [AUTO](#auto) - automatically provide line numbers
  - [DELETE](#delete) - remove specified lines
@@ -10,7 +12,6 @@
  - [TABLE](#table) - display a list of assembled labels
  - [TIM](#tim) - start the machine code monitor
 
-Note: These commands can be called using BASIC shortcuts (i.e. enter the first letter then hold shift while entering the second letter).
 
 ## ASSEMBLE
 
@@ -20,9 +21,7 @@ Note: These commands can be called using BASIC shortcuts (i.e. enter the first l
 * `ASSEMBLE`
 
 ### Description
-Assemble the source code to memory. It runs three passes then provides addresses for the start and end of each area of memory used, or stops and displays an error.
-
-It prompts for confirmation if the assembly would corrupt the area of memory containing BASIC code.
+The `ASSEMBLE` command assembles the source code into memory by running three passes and providing addresses for the start and end of each area of memory used. If the assembly would corrupt the area of memory containing BASIC code, the command prompts for confirmation or stops and displays an error.
 
 
 ## AUTO
@@ -35,11 +34,7 @@ It prompts for confirmation if the assembly would corrupt the area of memory con
 * `AUTO start,step`
 
 ### Description
-Output a line number ready for code to be entered, then automatically displays the next line number when you press return.
-
-To stop the AUTO function hold shift and press return, or press return twice. 
-
-On the first run the default start number is 100. The default step is 10.
+The `AUTO` command outputs a line number ready for code to be entered and automatically displays the next line number when you press return. To stop the `AUTO` function, hold shift and press return or press return twice. The default start number is 100, and the default step is 10 on the first run.
 
 
 ## DELETE
@@ -52,7 +47,7 @@ On the first run the default start number is 100. The default step is 10.
 * `DELETE -end`
 
 ### Description
-Delete the specified range of lines from memory.
+The `DELETE` command removes the specified range of lines from memory.
 
 
 ## DISASSEMBLE
@@ -64,7 +59,7 @@ Delete the specified range of lines from memory.
 * `DISASSEMBLE start-`
 
 ### Description
-Displays a listing of memory locations and their contents, along with the corresponding opcodes or BYT if the opcode is invalid. If more than a screenful of information it pauses until you press a key.
+The `DISASSEMBLE` command displays a listing of memory locations and their contents, along with the corresponding opcodes or "BYT" if the opcode is invalid. If more than a screenful of information is available, the command pauses until you press a key.
 
 
 ## FIND
@@ -78,7 +73,7 @@ Displays a listing of memory locations and their contents, along with the corres
 * `FIND text,-end`
 
 ### Description
-Display a formatted list of lines containing the specified text. Can be limited to a specified range.
+The `FIND` command displays a formatted list of lines containing the specified text. You can limit the output to a specified range.
 
 
 ## FORMAT
@@ -92,7 +87,7 @@ Display a formatted list of lines containing the specified text. Can be limited 
 * `FORMAT -end`
 
 ### Description
-Display the source code formatted in columns better suited for assembler code.
+The `FORMAT` command displays the source code formatted in columns better suited for assembler code.
 
 
 ## NUMBER
@@ -107,10 +102,7 @@ Display the source code formatted in columns better suited for assembler code.
 * `NUMBER label`
 
 ### Description
-Take a number, or an assembled label, and display its value in hexadecimal, decimal, octal, and binary.
-
-It can also display the result of simple additions and subtractions, as long as the value is not negative at any stage of the calculation.
-
+The `NUMBER` command takes a number or an assembled label and displays its value in hexadecimal, decimal, octal, and binary. It can also display the result of simple additions and subtractions as long as the value is not negative at any stage of the calculation.
 
 ## TABLE
 
@@ -120,7 +112,7 @@ It can also display the result of simple additions and subtractions, as long as 
 * `TABLE`
 
 ### Description
-Used after a successful assembly to display an alphabetically sorted list of labels with their 16-bit hexadecimal values.
+The `TABLE` command displays an alphabetically sorted list of labels with their 16-bit hexadecimal values after a successful assembly.
 
 
 ## TIM
@@ -131,4 +123,4 @@ Used after a successful assembly to display an alphabetically sorted list of lab
 * `TIM`
 
 ### Description
-Start the machine code monitor and put you at the prompt, ready for input. It displays the starting address of TIM and the state of the registers.
+The `TIM` command starts the machine code monitor and puts you at the prompt, ready for input. It displays the starting address of `TIM` and the state of the registers.
