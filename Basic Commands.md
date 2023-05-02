@@ -21,7 +21,7 @@ Below is a list of commands that can be used with Mikro Assembler, along with th
 * `ASSEMBLE`
 
 ### Description
-The `ASSEMBLE` command assembles the source code into memory by running three passes and providing addresses for the start and end of each area of memory used. If the assembly would corrupt the area of memory containing BASIC code, the command prompts for confirmation or stops and displays an error.
+The `ASSEMBLE` command assembles the source code into memory by running three passes, and provides addresses for the start and end of each area of memory used. If the assembly would corrupt the area of memory that contains BASIC code, it prompts for confirmation or stops and displays an error.
 
 
 ## AUTO
@@ -34,7 +34,7 @@ The `ASSEMBLE` command assembles the source code into memory by running three pa
 * `AUTO start,step`
 
 ### Description
-The `AUTO` command outputs a line number ready for code to be entered and automatically displays the next line number when you press return. To stop the `AUTO` function, hold shift and press return or press return twice. The default start number is 100, and the default step is 10 on the first run.
+The `AUTO` command outputs a line number ready for code to be entered, and automatically displays the next line number when you press return. To stop the `AUTO` function, hold shift and press return or press return twice. The default start number is 100, and the default step is 10 on the first run.
 
 
 ## DELETE
@@ -87,7 +87,7 @@ The `FIND` command displays a formatted list of lines containing the specified t
 * `FORMAT -end`
 
 ### Description
-The `FORMAT` command displays the source code formatted in columns better suited for assembler code.
+The `FORMAT` command displays the source code formatted in columns better suited for displaying assembler code.
 
 
 ## NUMBER
@@ -102,7 +102,7 @@ The `FORMAT` command displays the source code formatted in columns better suited
 * `NUMBER label`
 
 ### Description
-The `NUMBER` command takes a number or an assembled label and displays its value in hexadecimal, decimal, octal, and binary. It can also display the result of simple additions and subtractions as long as the value is not negative at any stage of the calculation.
+The `NUMBER` command takes a number, or an assembled label, and displays its value in hexadecimal, decimal, octal, and binary. It can also display the result of simple additions and subtractions as long as the value is not negative at any stage of the calculation.
 
 ## TABLE
 
@@ -112,7 +112,7 @@ The `NUMBER` command takes a number or an assembled label and displays its value
 * `TABLE`
 
 ### Description
-The `TABLE` command displays an alphabetically sorted list of labels with their 16-bit hexadecimal values after a successful assembly.
+The `TABLE` command displays an alphabetically sorted list of labels with their 16-bit hexadecimal values after a successful assemble.
 
 
 ## TIM
