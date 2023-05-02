@@ -5,7 +5,7 @@
 
 ## Introduction
 
-The Mikro Assembler is a cartridge for the Commodore 64/VIC 20, released by Supersoft in the early 1980s and written by Andrew J Trott. It offers a unique way to write assembly code, using line numbers like BASIC code. The cartridge allows users to `LOAD`, `SAVE`, and `VERIFY` their code to disk or tape, and it includes a machine code monitor called `TIM`.
+The Mikro Assembler is a cartridge for the Commodore 64/VIC 20, released by Supersoft in the early 1980s and written by Andrew J Trott. It offers a unique way to write assembly code, using line numbers like writing BASIC code. The cartridge allows users to `LOAD`, `SAVE`, and `VERIFY` their code to disk or tape, and it includes a machine code monitor called `TIM`.
 
 
 ## Downloads
