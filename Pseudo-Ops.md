@@ -36,6 +36,25 @@ Example:
 
 ## LNK
 
+The `LNK` opcode is used to link multiple Mikro Assembler source files together. This allows the assembler to handle longer programs by breaking them up into smaller, more manageable files. The syntax is similar to the `LOAD` command in BASIC.
+
+Example:
+```
+500 LNK "PART TWO",8
+```
+
+You must use the `END` command in the last file to link the assembler back to the first one. The `END` command should include the name of the first file and its device number.
+```
+; PART ONE
+...
+500 LNK "PART TWO",8
+
+
+; PART TWO
+...
+900 END "PART ONE",8
+```
+
 
 ## OFF
 
