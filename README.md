@@ -20,7 +20,8 @@ The following items are available for download from this repository:
 
 ## Usage
 
-For a list of BASIC commands to use with the Mikro Assembler, refer to [Basic Commands.md](Basic%20Commands.md).
+* [List of BASIC Commands](Basic%20Commands.md)
+* [List of Pseudo Opcodes](Pseudo-Ops.md)
 
 
 ## Examples
