@@ -43,9 +43,9 @@ The `OFF` opcode is used to stop the output from the `OUT` opcode.
 
 Example:
 ```
-10 OUT
+OUT 4
 ...
-200 OFF
+OFF
 ```
 
 This will stop assembly output from being displayed.
