@@ -53,18 +53,18 @@ This will stop assembly output from being displayed.
 
 ## OUT
 
-The `OUT` opcode is used to output the subsequent code with the assembled code to the [https://www.c64-wiki.com/wiki/Device_number](specified device) during assembly.
+The `OUT` pseudo-opcode is used to output the subsequent code with its assembled code to a specified device during assembly. If no device number is specified, the output will be displayed on the screen.
 
-Add 128 to the value if the printer does not automatically line feed.
+To specify the device number, use the value associated with the device according to the [C64-Wiki](https://www.c64-wiki.com/wiki/Device_number).
 
-Use `OUT` without a device number to output to the screen without line numbers.
+If the device is a printer that does not automatically perform a line feed, add 128 to the device number.
 
 Example:
 ```
 100 OUT 4
 ```
 
-This will output to device number 4, the first printer.
+This will output the assembled code to device number 4, which is typically the first printer.
 
 
 ## TXT
