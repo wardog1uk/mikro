@@ -42,6 +42,19 @@ END
 
 ## OUT
 
+The `OUT` opcode is used to output the subsequent code with the assembled code to the [https://www.c64-wiki.com/wiki/Device_number](specified device) during assembly.
+
+Add 128 to the value if the printer does not automatically line feed.
+
+Use `OUT` without a device number to output to the screen without line numbers.
+
+Example:
+```
+OUT 4
+```
+
+This will output to device number 4, the first printer.
+
 
 ## TXT
 
