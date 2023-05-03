@@ -1,5 +1,7 @@
 # Mikro Assembler Pseudo Opcodes
 
+Here are the pseudo opcodes that can be used in Mikro Assembler:
+
  - [BYT](#byt)
  - [END](#end)
  - [LNK](#lnk)
@@ -12,8 +14,24 @@
 
 ## BYT
 
+The `BYT` opcode is used to store a byte value in memory. It takes one or more comma-separated values as its argument, each representing a byte to be stored in memory.
+
+Example:
+```
+BYT $01,2,'A,"BCD"
+```
+
+This will store the values $01, $02, $41, $42, $43 and $44 in memory at the current location.
+
 
 ## END
+
+The `END` opcode marks the end of the assembly file. Any code afterwards will not be assembled.
+
+Example:
+```
+END
+```
 
 
 ## LNK
@@ -27,8 +45,26 @@
 
 ## TXT
 
+The `TXT` opcode is used to store a string of characters in memory.
+
+Example:
+```
+TXT "HELLO, WORLD!"
+```
+
+This will store the ASCII values of the string "HELLO, WORLD!" in memory.
+
 
 ## WOR
+
+The `WOR` opcode is used to store a 16-bit word in memory, low byte first. It takes one or more comma-separated values as its argument, each representing a word to be stored in memory.
+
+Example:
+```
+WOR $1234, $5678
+```
+
+This will store the values `$1234` and `$5678` in memory as `$34 $12 $78 $56`.
 
 
 ## \*\(asterisk\)
