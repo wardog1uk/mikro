@@ -111,3 +111,22 @@ This will store the values `$1234` and `$5678` in memory as `$34 $12 $78 $56`.
 
 
 ## \*\(asterisk\)
+
+The `*` opcode is used to get or set the current memory position.
+
+### Examples
+
+To set the current memory position for the assembly code to $C000:
+```
+10 *=$C000
+```
+
+To advance the current memory position by 1024 bytes:
+```
+300 *=*+1024
+```
+
+To store the current memory position into the POSITION label:
+```
+100 POSITION=*
+```
