@@ -58,7 +58,7 @@ You must use the `END` command in the last file to link the assembler back to th
 
 ## OFF
 
-The `OFF` opcode is used to stop the output from the `OUT` opcode.
+The `OFF` opcode is used to stop the output from the `OUT` opcode during assembly.
 
 Example:
 ```
