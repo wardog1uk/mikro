@@ -18,7 +18,7 @@ The `BYT` opcode is used to store a byte value in memory. It takes one or more c
 
 Example:
 ```
-BYT $01,2,'A,"BCD"
+100 BYT $01,2,'A,"BCD"
 ```
 
 This will store the values $01, $02, $41, $42, $43 and $44 in memory at the current location.
@@ -30,7 +30,7 @@ The `END` opcode marks the end of the assembly file. Any code afterwards will no
 
 Example:
 ```
-END
+100 END
 ```
 
 
@@ -61,7 +61,7 @@ Use `OUT` without a device number to output to the screen without line numbers.
 
 Example:
 ```
-OUT 4
+100 OUT 4
 ```
 
 This will output to device number 4, the first printer.
@@ -73,7 +73,7 @@ The `TXT` opcode is used to store a string of characters in memory.
 
 Example:
 ```
-TXT "HELLO, WORLD!"
+100 TXT "HELLO, WORLD!"
 ```
 
 This will store the ASCII values of the string "HELLO, WORLD!" in memory.
@@ -85,7 +85,7 @@ The `WOR` opcode is used to store a 16-bit word in memory, low byte first. It ta
 
 Example:
 ```
-WOR $1234, $5678
+100 WOR $1234, $5678
 ```
 
 This will store the values `$1234` and `$5678` in memory as `$34 $12 $78 $56`.
