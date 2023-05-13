@@ -32,7 +32,16 @@ To use this command, provide the start and end addresses of the memory range to 
 
 ## L (Load)
 
+
 ## M (Memory display)
+
+### Command
+* `M <start address> <end address>`
+
+### Description
+The M command displays the contents of memory, allowing you to view and edit the values stored at specific addresses. You can overwrite values and press return on the line to save the changes.
+
+To use this command, provide the start and end addresses of the memory range you want to display. For example, `M C000 C100` would display the memory contents between addresses C000 and C100.
 
 
 ## R (Register display)
