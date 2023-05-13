@@ -34,7 +34,17 @@ To use this command, provide the start and end addresses of the memory range to 
 
 ## M (Memory display)
 
+
 ## R (Register display)
+
+### Command
+* `R`
+
+### Description
+The `R` command displays the values of the CPU registers, allowing you to view and edit their current state
+
+To use this command, simply enter `R` and the register values will be displayed on the screen. You can overwrite a value and press return to save the changes.
+
 
 ## S (Save)
 
