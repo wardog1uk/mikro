@@ -22,7 +22,7 @@ To use this command, provide the start and end addresses of the memory range you
 ## H (Hunt)
 
 ### Command
-* Syntax: `H <start address> <end address> <byte>`
+* `H <start address> <end address> <byte>`
 
 ### Description
 The `H` command is used to search for a specific byte in memory. It lists all addresses in the given range that contain the specified byte.
