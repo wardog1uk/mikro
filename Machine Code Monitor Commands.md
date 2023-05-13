@@ -2,6 +2,8 @@
 
 To enter the machine code monitor type `TIM` at the basic prompt.
 
+![TIM](images/basic/tim.png)
+
 
 ## D (Disassemble)
 
