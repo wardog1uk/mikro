@@ -59,4 +59,13 @@ To use this command, simply enter `R` and the register values will be displayed 
 
 ## T (Transfer)
 
+
 ## X (Exit to Basic)
+
+### Command
+* `X`
+
+### Description
+The `X` command is used to exit the machine code monitor and return to the BASIC prompt.
+
+To use this command, simply enter `X`.
