@@ -77,12 +77,12 @@ The `S` command is used to save a range of memory to a file. It allows you to sp
 
 To use this command, provide the following parameters:
 
-* `"[<logical file number>:]<filename>"`: Specify the filename in quotes and optionally include the logical file number (default is 0). For example, `"0:program.prg"` specifies the filename as "program.prg" and the logical file number as 0.
+* `"[<logical file number>:]<filename>"`: Specify the filename in quotes and optionally include the logical file number (default is 0). For example, `"0:PROGRAM.PRG"` specifies the filename as "PROGRAM.PRG" and the logical file number as 0.
 * `<drive>`: Specify the drive number using two digits. For example, `08` represents the first disk drive, `01` represents the cassette.
 * `<start address>`: Specify the start address of the memory range to save.
 * `<end address>`: Specify the end address of the memory range to save.
 
-For example, `S "0:program.prg",08,C000,C100` would save the memory contents between addresses `C000` and `C100` to the file "program.prg" on drive 8.
+For example, `S "0:PROGRAM.PRG",08,C000,C100` would save the memory contents between addresses `C000` and `C100` to the file "PROGRAM.PRG" on drive 8.
 
 
 ## T (Transfer)
