@@ -22,12 +22,14 @@ To use this command, provide the start and end addresses of the memory range you
 ## H (Hunt)
 
 ### Command
-* `H <start address> <end address> <byte>`
+* `H <start address> <end address> <byte> [<byte>]...`
 
 ### Description
-The `H` command is used to search for a specific byte in memory. It lists all addresses in the given range that contain the specified byte.
+The `H` command is used to search for specific bytes in memory. It lists all addresses in the given range that contain the specified byte pattern.
 
-To use this command, provide the start and end addresses of the memory range to search within, along with the byte pattern you want to find. For example, `H C000 D000 BB` would search for occurrences of the byte `BB` in the memory range between addresses C000 and D000.
+To use this command, provide the start and end addresses of the memory range to search within, followed by the byte or bytes you want to find. For example, `H C000 D000 BB` would search for occurrences of the byte `BB` in the memory range between addresses `C000` and `D000`.
+
+You can also search for multiple bytes by providing additional bytes separated by spaces. For example, `H C000 D000 12 34 AB` would search for occurrences of the byte pattern `12 34 AB` in the specified memory range.
 
 
 ## L (Load)
