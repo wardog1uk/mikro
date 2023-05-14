@@ -70,7 +70,7 @@ To use this command, simply enter `R` and the register values will be displayed 
 ## S (Save)
 
 ### Command
-* Syntax: `S "[<logical file number>:]<filename>",<drive>,<start address>,<end address>`
+* `S "[<logical file number>:]<filename>",<drive>,<start address>,<end address>`
 
 ### Description
 The `S` command is used to save a range of memory to a file. It allows you to specify the filename, drive, and memory range for the save operation.
