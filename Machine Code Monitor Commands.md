@@ -34,6 +34,16 @@ You can also search for multiple bytes by providing additional bytes separated b
 
 ## L (Load)
 
+### Command
+* `L ["<filename>"[,<drive>]]`
+
+### Description
+The `L` command is used to load machine code into memory from a file.
+
+To use this command, provide the filename of the binary file you want to load and a two digit drive number. For example, `L "PROGRAM.PRG",08` would load the machine code from the file "PROGRAM.PRG" into memory from drive 8.
+
+To load from cassette you can omit the drive number or use drive 01. If you also omit the filename it will load the first program from tape.
+
 
 ## M (Memory display)
 
