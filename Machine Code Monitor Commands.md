@@ -87,6 +87,16 @@ For example, `S "0:PROGRAM.PRG",08,C000,C100` would save the memory contents bet
 
 ## T (Transfer)
 
+### Command
+* `T <start> <end> <new start>`
+
+### Description
+The `T` command is used to copy bytes from one memory location to another.
+
+To use this command, provide the start and end addresses of the memory range you want to copy, followed by the address to where the bytes will be written.
+
+For example, `T C000 C200 C550` would copy the bytes from addresses `C000` to `C200` into the new memory location starting at address `C550`.
+
 
 ## X (Exit to Basic)
 
