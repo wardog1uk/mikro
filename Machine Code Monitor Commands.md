@@ -18,6 +18,16 @@ To use this command, provide the start and end addresses of the memory range you
 
 ## G (Go execute)
 
+### Command
+* `G [<address>]`
+
+### Description
+The `G` command is used to jump to a specific memory address and start executing the machine code instructions from that address.
+
+To use this command, you can provide an optional address parameter. If you specify an address, the program will jump to that address and start executing from there. If no address is provided, the program will use the address shown in the register display.
+
+Please note that in order for the execution to return to the monitor, the machine code program must end with a `BRK` instead of a `RTS`. Without a break instruction the program execution may continue indefinitely or result in unexpected behavior.
+
 
 ## H (Hunt)
 
