@@ -12,9 +12,9 @@ The Mikro Assembler is a cartridge for the Commodore 64/VIC 20, released by Supe
 
 The following items are available for download from this repository:
 
-* [Mikro Assembler Cartridge](downloads/cartridges/Mikro%20Assembler.crt)
-* [Mikro Assembler Cartridge (modified for Vice)](downloads/cartridges/Mikro%20Assembler%20[vice].crt)
-* [Multi Easy Easyflash Cartridge](downloads/cartridges/Multi-Easy.crt) by [Lord Crass](https://csdb.dk/scener/?id=25177), which includes a version of the Mikro Assembler that works on C64 and C64C ([source](https://csdb.dk/release/?id=117893)).
+* [Mikro Assembler Cartridge (modified with correct cartridge ID for emulators)](downloads/cartridges/Mikro%20Assembler%20[vice].crt)
+* [Mikro Assembler Cartridge (original cartridge dump)](downloads/cartridges/Mikro%20Assembler.crt)
+* [Multi Easy Easyflash Cartridge](downloads/cartridges/Multi-Easy.crt) by [Lord Crass](https://csdb.dk/scener/?id=25177), includes a version of the Mikro Assembler that works on my hardware. ([source](https://csdb.dk/release/?id=117893)).
 * [Mikro Assembler Manual](downloads/Mikro%20Assembler%20Manual.pdf)
 
 
